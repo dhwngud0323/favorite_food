@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>좋아하는 음식</title>
+</head>
+
+<body>
+
+    <h1>🍰 좋아하는 음식</h1>
+
+    <input type="text" id="food" placeholder="좋아하는 음식 입력">
+    <button onclick="showFood()">확인</button>
+
+    <p id="result"></p>
+
+    <script>
+        function showFood() {
+            let food = document.getElementById("food").value;
+
+            document.getElementById("result").innerHTML =
+                "내가 좋아하는 음식은 " + food + "입니다!";
+        }
+    </script>
+
+</body>
+</html>
